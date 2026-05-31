@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YbyTech | Tecnologia com raízes brasileiras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <!-- Header / Navegação -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="YbyTech Logo">
+                <!-- Texto removido conforme solicitado -->
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="img/logo.png" alt="YbyTech">
+            </div>
+            <h1>YbyTech</h1>
+            <p class="tagline">Tecnologia com raízes brasileiras</p>
+            <p class="description">Desenvolvemos sistemas, sites e soluções digitais inteligentes para empresas e empreendedores.</p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary"><i class="fas fa-rocket"></i> Ver Projetos</a>
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-particles"></div>
+</section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre a YbyTech</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>A YbyTech nasceu da união entre a sabedoria brasileira (<strong>Yby</strong> = Terra, em tupi-guarani) e a inovação digital. Somos uma startup focada em desenvolvimento de software, soluções web e infraestrutura de redes.</p>
+                    <p>Nosso propósito é transformar ideias em sistemas modernos, funcionais e que realmente resolvam problemas. Com tecnologia de ponta e olhar atento às necessidades de cada cliente, entregamos soluções que fazem a diferença.</p>
+                    <div class="sobre-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="12">0</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">0</span>
+                            <span class="stat-label">Sistemas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">Desenv. Próprio</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="2026">0</span>
+                            <span class="stat-label">Fundação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-ilustracao">
+                    <div class="code-icon">
+                        <i class="fas fa-code"></i>
+                        <i class="fas fa-database"></i>
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Projetos</h2>
+                <div class="underline"></div>
+                <p>Conheça alguns dos sistemas que desenvolvemos</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Projeto 1 - SimuCare -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/simulcare.png" alt="SimuCare">
+                        <div class="card-overlay">
+                            <button class="btn-detalhes" data-projeto="simucare"><i class="fas fa-eye"></i> Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>SimuCare</h3>
+                        <p>Simulador clínico para treinamento médico com casos realistas.</p>
+                        <div class="card-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="#" class="btn-card" data-projeto="simucare">Ver Projeto →</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 - GranMaq -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/granmaq.png" alt="GranMaq">
+                        <div class="card-overlay">
+                            <button class="btn-detalhes" data-projeto="granmaq"><i class="fas fa-eye"></i> Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>GranMaq</h3>
+                        <p>Sistema de gestão para empresas de maquinário pesado e locações.</p>
+                        <div class="card-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="btn-card" data-projeto="granmaq">Ver Projeto →</a>
+                    </div>
+                </div>
+
+                  <!-- Projeto 3 - DispensaSys -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/dispensasys.png" alt="DispensaSys">
+                    <div class="card-overlay">
+                        <button class="btn-detalhes" data-projeto="dispensasys"><i class="fas fa-eye"></i> Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>DispensaSys</h3>
+                    <p>Simulador inteligente de gestão de dispensação e inventário.</p>
+                    <div class="card-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="#" class="btn-card" data-projeto="dispensasys">Ver Projeto →</a>
+                </div>
+            </div>
+
+              <!-- Projeto 4 - Barbearia Estilo PRO -->
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/barbearia-estilo-pro.png" alt="Barbearia Estilo PRO">
+                    <div class="card-overlay">
+                        <button class="btn-detalhes" data-projeto="barbeariaestilopro"><i class="fas fa-eye"></i> Ver Detalhes</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Barbearia Estilo PRO</h3>
+                    <p>Sistema completo de agendamento online para barbearias. Cliente agenda 24h, barbeiro gerencia tudo pelo painel.</p>
+                    <div class="card-tech">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>WhatsApp API</span>
+                    </div>
+                    <a href="#" class="btn-card" data-projeto="barbeariaestilopro">Ver Projeto →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tecnologias Section -->
+    <section class="tecnologias">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnologias</h2>
+                <div class="underline"></div>
+                <p>Ferramentas que utilizamos no dia a dia</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+                <div class="tech-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                <div class="tech-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+                <div class="tech-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                <div class="tech-item"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-item"><i class="fab fa-node"></i><span>Node.js</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <div class="underline"></div>
+                <p>Soluções completas para o seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites profissionais, responsivos e otimizados para SEO.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Sistemas Personalizados</h3>
+                    <p>Soluções sob medida para atender necessidades específicas do seu negócio.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Banco de Dados</h3>
+                    <p>Estruturação, modelagem e gerenciamento de dados eficiente.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Redes</h3>
+                    <p>Infraestrutura, configuração e suporte de redes corporativas.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-chalkboard-user"></i>
+                    <h3>Consultoria</h3>
+                    <p>Orientação tecnológica para transformar sua ideia em realidade.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Automação</h3>
+                    <p>Otimização de processos repetitivos com soluções inteligentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Tem uma ideia ou projeto?</h2>
+                <p>A YbyTech transforma seu conceito em uma solução digital completa.</p>
+                <a href="https://wa.me/5511999999999?text=Olá! Vim pelo site da YbyTech e gostaria de solicitar um orçamento." target="_blank" class="btn btn-cta"><i class="fab fa-whatsapp"></i> Solicitar Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Footer -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="YbyTech">
+                    <h3>YbyTech</h3>
+                    <p>Tecnologia com raízes brasileiras</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 YbyTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Projetos -->
+    <div class="modal" id="projetoModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitulo">SimuCare</h2>
+                <div class="modal-detalhes">
+                    <p id="modalDescricao"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                    <div class="modal-features" id="modalFeatures"></div>
+                    <a href="#" id="modalLink" class="btn btn-primary" target="_blank">Acessar Projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5511999999999?text=Olá! Vim pelo site da YbyTech e gostaria de solicitar um orçamento." target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
