@@ -165,7 +165,6 @@ const projetosData = {
         "📋 Copiar - Copie o resultado para área de transferência",
         "📱 Responsivo - Funciona perfeitamente no celular"
     ],
-    link: "https://ruanricardo-ti.github.io/clareia/"
 }
 };
     
