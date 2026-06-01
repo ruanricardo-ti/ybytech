@@ -151,6 +151,21 @@ const projetosData = {
             'Dias de funcionamento flexíveis'
         ],
         link: '#'
+    },
+       clareia: {
+        titulo: "Clare.ia",
+        descricao: "O Clare.ia é uma ferramenta web que ajuda pessoas leigas a entenderem documentos complexos como contratos, cartas de banco, termos de consentimento e muito mais. Com um clique, o sistema identifica termos jurídicos, bancários e de saúde, explicando cada um em português claro e simples.",
+        tech: ["HTML5", "CSS3", "JavaScript", "Tesseract.js", "OCR", "Web Speech API"],
+        features: [
+            "📸 OCR - Tire foto do documento ou escolha da galeria",
+            "📝 Digitar/Colar - Cole o texto diretamente",
+            "✨ Clarear - Marca termos difíceis com explicações",
+            "🔊 Leitura por voz - Escute com velocidade ajustável",
+            "📥 Download - Salve em TXT ou PDF",
+            "📋 Copiar - Copie o resultado para área de transferência",
+            "📱 Responsivo - Funciona perfeitamente no celular"
+        ],
+        link: "https://ruanricardo-ti.github.io/clareia/"
     }
 };
     
