@@ -125,7 +125,7 @@ const projetosData = {
         ],
         link: '#'
     },
-   dispensasys: {
+    dispensasys: {
         titulo: 'DispensaSys',
         descricao: 'DispensaSys é um simulador educacional de farmácia hospitalar desenvolvido para treinar estudantes e profissionais na prática de gestão de medicamentos, validação de prescrições e dispensação segura.',
         tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap'],
@@ -138,7 +138,7 @@ const projetosData = {
         ],
         link: '#'
     },
-      barbeariaestilopro: {
+    barbeariaestilopro: {
         titulo: 'Barbearia Estilo PRO',
         descricao: 'O Barbearia Estilo PRO é uma solução completa para barbearias que desejam modernizar o atendimento e nunca mais perder clientes por falta de agenda. Com ele, o cliente pode agendar horários diretamente pelo celular, escolher o profissional de preferência, entrar na fila de espera e receber confirmação no WhatsApp. O barbeiro tem um painel administrativo completo para gerenciar serviços, profissionais, horários, dias de funcionamento e personalizar a identidade visual da sua barbearia.',
         tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'WhatsApp API', 'Bootstrap'],
@@ -152,22 +152,42 @@ const projetosData = {
         ],
         link: '#'
     },
-       clareia: {
-    titulo: "Clare.ia",
-    descricao: "O Clare.ia é uma ferramenta web que ajuda pessoas leigas a entenderem documentos complexos como contratos, cartas de banco, termos de consentimento e muito mais. Com um clique, o sistema identifica termos jurídicos, bancários e de saúde, explicando cada um em português claro e simples.",
-    tecnologias: ["HTML5", "CSS3", "JavaScript", "Tesseract.js", "OCR", "Web Speech API"],
-    features: [
-        "📸 OCR - Tire foto do documento ou escolha da galeria",
-        "📝 Digitar/Colar - Cole o texto diretamente",
-        "✨ Clarear - Marca termos difíceis com explicações",
-        "🔊 Leitura por voz - Escute com velocidade ajustável",
-        "📥 Download - Salve em TXT ou PDF",
-        "📋 Copiar - Copie o resultado para área de transferência",
-        "📱 Responsivo - Funciona perfeitamente no celular"
-    ],
-}
+    clareia: {
+        titulo: 'Clare.ia',
+        descricao: 'O Clare.ia é uma ferramenta web que ajuda pessoas leigas a entenderem documentos complexos como contratos, cartas de banco, termos de consentimento e muito mais. Com um clique, o sistema identifica termos jurídicos, bancários e de saúde, explicando cada um em português claro e simples.',
+        tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'Tesseract.js', 'OCR', 'Web Speech API'],
+        features: [
+            '📸 OCR - Tire foto do documento ou escolha da galeria',
+            '📝 Digitar/Colar - Cole o texto diretamente',
+            '✨ Clarear - Marca termos difíceis com explicações',
+            '🔊 Leitura por voz - Escute com velocidade ajustável',
+            '📥 Download - Salve em TXT ou PDF',
+            '📋 Copiar - Copie o resultado para área de transferência',
+            '📱 Responsivo - Funciona perfeitamente no celular'
+        ],
+        link: '#'
+    },
+    // ===== YOU BEE - NOVO PROJETO =====
+    youbee: {
+        titulo: '🐝 YouBee',
+        descricao: 'YouBee é uma plataforma web completa que conecta jovens em busca do primeiro emprego, profissionais autônomos e empresas em um único ambiente digital. Com inteligência artificial para recomendações personalizadas de vagas, a YouBee facilita a empregabilidade e a conexão entre talentos e oportunidades.',
+        tecnologias: ['PHP 8', 'MySQL', 'Bootstrap 5', 'JavaScript', 'AJAX', 'IA', 'HTML5', 'CSS3'],
+        features: [
+            '✅ Sistema de cadastro com 3 tipos de perfil (candidato, empresa, autônomo)',
+            '✅ Currículo online com gerador de PDF',
+            '✅ Publicação e candidatura a vagas de emprego',
+            '✅ Catálogo de profissionais autônomos com busca por serviço e localização',
+            '✅ Chat em tempo real entre usuários',
+            '✅ Sistema de avaliação com estrelas (⭐ 1 a 5)',
+            '✅ Inteligência Artificial para recomendação personalizada de vagas',
+            '✅ Dashboard com estatísticas e métricas em tempo real',
+            '✅ Design responsivo (funciona em celular, tablet e desktop)',
+            '✅ Sistema de mensagens com notificações em tempo real'
+        ],
+        link: '#'
+    }
 };
-    
+
 // Abrir modal
 document.querySelectorAll('[data-projeto]').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -192,9 +212,12 @@ document.querySelectorAll('[data-projeto]').forEach(btn => {
 });
 
 // Fechar modal
-document.querySelector('.modal-close').addEventListener('click', () => {
-    modal.style.display = 'none';
-});
+const modalClose = document.querySelector('.modal-close');
+if (modalClose) {
+    modalClose.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
 
 window.addEventListener('click', (e) => {
     if (e.target === modal) {
@@ -202,7 +225,7 @@ window.addEventListener('click', (e) => {
     }
 });
 
-// ===== EFEITO DE PARTICLAS NO HERO =====
+// ===== EFEITO DE PARTÍCULAS NO HERO =====
 function createParticles() {
     const hero = document.querySelector('.hero-particles');
     if (!hero) return;
@@ -223,8 +246,8 @@ function createParticles() {
 }
 
 // Adicionar estilo das partículas
-const style = document.createElement('style');
-style.textContent = `
+const styleSheet = document.createElement('style');
+styleSheet.textContent = `
     @keyframes floatParticle {
         0% {
             transform: translateY(0) translateX(0);
@@ -249,7 +272,7 @@ style.textContent = `
         pointer-events: none;
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(styleSheet);
 createParticles();
 
 // ===== SMOOTH SCROLL PARA LINKS INTERNOS =====
@@ -275,4 +298,13 @@ if (yearSpan) {
     yearSpan.innerHTML = `&copy; ${new Date().getFullYear()} YbyTech. Todos os direitos reservados.`;
 }
 
+// ===== DESTAQUE PARA O CARD YOU BEE =====
+const youbeeCard = document.querySelector('.card-youbee');
+if (youbeeCard) {
+    youbeeCard.addEventListener('mouseenter', () => {
+        console.log('🐝 YouBee - Plataforma de conexão profissional com IA!');
+    });
+}
+
 console.log('YbyTech - Site carregado com sucesso! 🚀');
+console.log('🐝 YouBee - Plataforma de conexão profissional integrada!');
