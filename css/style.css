@@ -878,3 +878,105 @@ footer {
         width: 55px;
     }
 }
+/* ===== CORREÇÃO DAS IMAGENS DOS CARDS ===== */
+.card-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Altura fixa para todas as imagens */
+    background: linear-gradient(135deg, #2563EB20, #7C3AED20); /* Fundo padrão */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir sem distorcer */
+    object-position: center; /* Centraliza a imagem */
+    transition: transform 0.5s ease;
+}
+
+/* Para imagens que precisam ser mostradas por completo */
+.card-image img[src*="barbearia"],
+.card-image img[src*="clareia"] {
+    object-fit: contain; /* Mostra a imagem inteira */
+    background: #1a1a2e; /* Fundo escuro para contraste */
+    padding: 10px;
+}
+
+/* ===== CARD YOU BEE EM DESTAQUE ===== */
+.card-youbee {
+    border: 2px solid #7C3AED;
+    box-shadow: 0 5px 20px rgba(124, 58, 237, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card-youbee:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.3);
+}
+
+.card-youbee .card-content h3 {
+    color: #A855F7;
+}
+
+/* ===== BOTÃO DE DESTAQUE NA SEÇÃO SOBRE ===== */
+.projeto-destaque {
+    margin-top: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #2563EB15, #7C3AED15);
+    border-radius: 12px;
+    border-left: 4px solid #7C3AED;
+}
+
+.projeto-destaque h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #A855F7;
+}
+
+.projeto-destaque p {
+    margin-bottom: 15px;
+}
+
+.btn-destaque {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #0066ff, #7b2eff);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-destaque:hover {
+    transform: translateX(5px);
+    color: white;
+}
+
+/* ===== ANIMAÇÃO DO CARD YOU BEE ===== */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(124, 58, 237, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(124, 58, 237, 0.6);
+    }
+}
+
+.card-youbee {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* ===== RESPONSIVO PARA OS CARDS (ajuste de altura) ===== */
+@media (max-width: 768px) {
+    .card-image {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-image {
+        height: 140px;
+    }
+}
